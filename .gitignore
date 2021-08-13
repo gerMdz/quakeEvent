@@ -8,3 +8,54 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+/.idea/
+
+# Caché y registros (Symfony2)
+
+
+# Carpeta de cola de correo electrónico
+
+
+# Caché, archivos de sesión y registros (Symfony3)
+/var /cache /*
+/var /logs /*
+/var /sesiones /*
+!var /cache /.gitkeep
+!var /logs /.gitkeep
+!var /sesiones /.gitkeep
+
+# Registros (Symfony4)
+/var /log /*
+!var /log /.gitkeep
+
+# Parámetros
+/app/config/parameters.yml
+/app/config/parameters.ini
+
+# Gestionado por Composer
+/app/bootstrap.php.cache
+/var/bootstrap.php.cache
+/compartimiento/*
+!bin /consola
+!bin /symfony_requirements
+/vendedor/
+
+# Activos y subidas de usuarios
+/web /bundles /
+/web /uploads /
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+# Construir datos
+/construir/
+
+# Compositor PHAR
+/composer.phar
+
+# Entidades de respaldo generadas con doctrina: generar: comando de entidades
+** /Entidad /* ~
+
+# Archivo pid del servidor web integrado
+/.web-server-pid
